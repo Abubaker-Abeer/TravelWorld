@@ -27,7 +27,7 @@ export default function Footer() {
             <FaInstagram />
           </div>
           <p className="footer__copyright">
-            © 2024 <a href="#">Vipin_uidesigns</a>. All Rights Reserved
+            © 2025 <a href="#">Abeer Abubaker</a>. All Rights Reserved
           </p>
         </div>
 
