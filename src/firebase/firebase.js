@@ -1,20 +1,17 @@
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth"; // 
+import { getAuth } from "firebase/auth";
 
-// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDwzTL-I8H7NhYEizNHE3m8UCkWAbWhLr8",
-  authDomain: "travelworld-auth.firebaseapp.com",
-  projectId: "travelworld-auth",
-  storageBucket: "travelworld-auth.appspot.com",
-  messagingSenderId: "482923742989",
-  appId: "1:482923742989:web:f607722581239f36dc1244",
-  measurementId: "G-CKPYXM5KPY"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const auth = getAuth(app); // 
+const auth = getAuth(app);
 
-export { auth }; // 
+export { auth };

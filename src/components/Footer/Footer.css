@@ -1,0 +1,66 @@
+.footer {
+  background: #fff;
+  padding: 50px 20px;
+  color: #333;
+}
+
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.footer__logo {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.footer__desc {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 15px;
+  margin: 10px 0;
+}
+
+.footer__socials svg {
+  font-size: 20px;
+  color: #f9a826;
+  cursor: pointer;
+}
+
+.footer__copyright {
+  font-size: 13px;
+  color: #777;
+}
+
+.footer__copyright a {
+  color: #f9a826;
+  text-decoration: none;
+}
+
+.footer__col h4 {
+  margin-bottom: 15px;
+  color: #0b2727;
+  font-size: 18px;
+}
+
+.footer__col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer__col ul li {
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: #444;
+}
+
+.footer__col ul li svg {
+  margin-right: 8px;
+  color: #f9a826;
+}
