@@ -8,6 +8,7 @@ import heroVideo from "../assets/images/hero-video.mp4";
 import Subtitle from "../shared/Subtitle";
 import worldImg from "../assets/images/world.png";
 import "../styles/home.css";
+import SearchBar from "../components/SearchBar/SearchBar";
 
 export default function Home() {
   useEffect(() => {
@@ -62,6 +63,7 @@ export default function Home() {
               <img src={heroImg02} alt="" />
             </div>
           </Col>
+          <SearchBar/>
         </Row>
       </Container>
     </section>
