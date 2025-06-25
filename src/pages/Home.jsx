@@ -9,6 +9,7 @@ import Subtitle from "../shared/Subtitle";
 import worldImg from "../assets/images/world.png";
 import "../styles/home.css";
 import SearchBar from "../components/SearchBar/SearchBar";
+import Service from "../components/Services/Service";
 
 export default function Home() {
   useEffect(() => {
@@ -19,6 +20,7 @@ export default function Home() {
   }, []);
 
   return (
+    <>
     <section>
       <Container>
         <Row>
@@ -67,5 +69,20 @@ export default function Home() {
         </Row>
       </Container>
     </section>
+      <section>
+        <Container>
+          <Row>
+            <Col lg="3">
+              <h5 className="services__subtitle">What we serve</h5>
+              <h2 className="services__title">We offer our best services</h2>
+            </Col>
+            
+            <Col lg="9">
+              <Service />
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      </>
   );
 }
