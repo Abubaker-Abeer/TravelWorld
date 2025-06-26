@@ -10,6 +10,7 @@ import worldImg from "../assets/images/world.png";
 import "../styles/home.css";
 import SearchBar from "../components/SearchBar/SearchBar";
 import Service from "../components/Services/Service";
+import Explore from "../components/Explore/Explore";
 
 export default function Home() {
   useEffect(() => {
@@ -69,7 +70,7 @@ export default function Home() {
         </Row>
       </Container>
     </section>
-      <section>
+    <section>
         <Container>
           <Row>
             <Col lg="3">
@@ -82,7 +83,10 @@ export default function Home() {
             </Col>
           </Row>
         </Container>
-      </section>
+    </section>
+    <section>
+      <Explore />
+    </section>
       </>
   );
 }
