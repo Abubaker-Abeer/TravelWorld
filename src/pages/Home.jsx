@@ -10,6 +10,7 @@ import worldImg from "../assets/images/world.png";
 import "../styles/home.css";
 import SearchBar from "../components/SearchBar/SearchBar";
 import Service from "../components/Services/Service";
+import Experience from "../components/Experience/Experience";
 import Explore from "../components/Explore/Explore";
 
 export default function Home() {
@@ -86,6 +87,9 @@ export default function Home() {
     </section>
     <section>
       <Explore />
+    </section>
+     <section>
+      <Experience />
     </section>
       </>
   );
