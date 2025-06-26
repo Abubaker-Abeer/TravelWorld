@@ -12,6 +12,7 @@ import SearchBar from "../components/SearchBar/SearchBar";
 import Service from "../components/Services/Service";
 import Experience from "../components/Experience/Experience";
 import Explore from "../components/Explore/Explore";
+import Gallery from "../components/Gallery/Gallery";
 
 export default function Home() {
   useEffect(() => {
@@ -90,6 +91,9 @@ export default function Home() {
     </section>
      <section>
       <Experience />
+    </section>
+     <section>
+      <Gallery />
     </section>
       </>
   );
