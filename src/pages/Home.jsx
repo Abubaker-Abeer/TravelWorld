@@ -7,7 +7,7 @@ import heroImg02 from "../assets/images/hero-img02.jpg";
 import heroVideo from "../assets/images/hero-video.mp4";
 import Subtitle from "../shared/Subtitle";
 import worldImg from "../assets/images/world.png";
-import "../styles/home.css";
+import "../styles/Home.css";
 import SearchBar from "../components/SearchBar/SearchBar";
 import Service from "../components/Services/Service";
 import Experience from "../components/Experience/Experience";
