@@ -14,6 +14,7 @@ import Experience from "../components/Experience/Experience";
 import Explore from "../components/Explore/Explore";
 import Gallery from "../components/Gallery/Gallery";
 import Fans_Love from "../components/Fans/Fans_Love";
+import Subscribe from "../components/Subscribe/Subscribe";
 
 export default function Home() {
   useEffect(() => {
@@ -98,6 +99,9 @@ export default function Home() {
     </section>
      <section>
       <Fans_Love />
+    </section>
+    <section>
+      <Subscribe />
     </section>
     
       </>
