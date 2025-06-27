@@ -5,6 +5,8 @@ import Login from "../pages/Auth/Login";
 import Register from "../pages/Auth/Register";
 import ProtectedRoute from "../router/ProtectedRoute";
 import About from "../pages/About";
+import Tours from "../pages/Tours";
+import MoreTours from "../pages/MoreTours";
 
 function Routers() {
   return (
@@ -12,9 +14,10 @@ function Routers() {
       <Route path="/" element={<Navigate to="/home" />} />
       <Route path="/home" element={<Home />} />
       <Route path="/about" element={<About />} />
+      <Route path="/tours" element={<Tours />} />
+      <Route path="/more-tours" element={<MoreTours />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
-      <Route path="/home" element={<Home /> }/>
     </Routes>
   );
 }

@@ -1,0 +1,57 @@
+.img_bannar {
+   background-image: url(../assets/images/All_Tours.png);
+   background-size: cover;
+   background-position: center;
+   height: 410px;
+   position: relative;
+   z-index: 1; 
+ }
+ 
+ .img_bannar::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.5); 
+   z-index: -1;  
+ }
+ 
+ .img_bannar h1 {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+   font-weight: 600;
+   color: #fff;
+   font-size: 50px;
+ }
+ 
+ .img_bannar h1 span {
+   color: var(--secondary-color);
+ }
+ 
+.btn_Load-More {
+    padding: 8px 16px;
+    margin: 0 5px;
+    background-color: orange;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    font-weight: 800;
+  }
+  
+  .btn_Load-More.active {
+     background-color: #111440;
+     color: white;
+    font-weight: bold;
+  }
+  
+  .btn_Load-More:hover {
+     background-color: #111440;
+      color: white;
+  }
+  
