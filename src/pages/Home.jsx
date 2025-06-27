@@ -13,6 +13,7 @@ import Service from "../components/Services/Service";
 import Experience from "../components/Experience/Experience";
 import Explore from "../components/Explore/Explore";
 import Gallery from "../components/Gallery/Gallery";
+import Fans_Love from "../components/Fans/Fans_Love";
 
 export default function Home() {
   useEffect(() => {
@@ -95,6 +96,10 @@ export default function Home() {
      <section>
       <Gallery />
     </section>
+     <section>
+      <Fans_Love />
+    </section>
+    
       </>
   );
 }

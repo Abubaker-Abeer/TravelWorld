@@ -1,0 +1,19 @@
+
+ .swiper_card{
+     margin-bottom: 30px;
+ }
+ .swiper_card p{
+    font-size: 15px;
+ }
+
+ .swiper_card .img_text {
+    display: flex;
+    gap: 20px;
+    padding: 10px 0;
+  }
+ .swiper_card .img_text .img_col img{
+    width: 90px;
+    height: 55px;
+    border-radius: 10px;
+ }
+  
