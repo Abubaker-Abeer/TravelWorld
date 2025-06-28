@@ -1,0 +1,35 @@
+.booking-confirmation{
+    height: 54vh;
+  
+}
+.booking{
+      padding-top: 50px;
+   
+}
+.booking-confirmation i{
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 20px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    padding: 5px;
+}
+.booking-confirmation h1{
+    font-family: var(--subtitle-font-name);
+    font-weight: 700;
+
+}
+.booking-confirmation a{
+    color: #fff;
+    background: var(--secondary-color);
+     border: none !important;;
+    border-radius: 5px;
+     padding: 8px 30px !important;
+    transition: 0.3s ease;
+    font-size: 20px;
+    font-weight: 600;
+}
+.booking-confirmation a:hover{
+    background: var(--primary-color);
+   
+}
