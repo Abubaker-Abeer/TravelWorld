@@ -1,12 +1,64 @@
-# React + Vite
+# 🌍 TravelWorld
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**TravelWorld** is a full-featured travel planning and booking web application designed for a seamless user experience. Built with **React**, **Firebase**,**Bootstrap + Reactstrap** and inspired by a professional Figma design, this app lets users explore tours, view photo galleries, leave testimonials, and book trips — all from one place.
 
-Currently, two official plugins are available:
+> 🔗 **Live Demo:** [https://travelworld-auth.web.app/home](https://travelworld-auth.web.app/home)  
+> 🎨 **Figma Design:** [TravelWorld on Figma](https://www.figma.com/design/CP5YwT48dKU5qsh0AYVyfa/TravelWorld---Travel-Planning---Booking-Website--Community-?node-id=0-1&p=f&t=mkN35lx3d49EAcxb-0)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🔐 **Authentication System** with Firebase (Login/Register)
+- 🏠 **Home Page** with animated Hero and interactive SearchBar
+- 🗺️ **Tours Pages**:  
+  - Tour listing with **pagination**  
+  - **Search filter** for quick results
+- 📄 **Tour Details**:
+  - View full details of the trip
+  - Comment system (requires login)
+  - Booking system + Booking Confirmation (requires login)
+- 🖼️ **Gallery**: Showcase of real travel moments
+- 💬 **Fans Love**: Testimonials slider built using Swiper
+- 📩 **Newsletter**: Email subscription form
+- 🏢 **About Us** and **Our Services** pages
+- 🎨 Animations using **AOS** & **CountUp.js**
+- ☁️ **Hosted on Firebase**
+
+---
+
+## 🔧 Tech Stack
+
+| Tech        | Use                         |
+|-------------|------------------------------|
+| React       | Front-end Framework          |
+| Vite        | Fast build tool              |
+| Firebase    | Auth & Hosting               |
+| Swiper.js   | Testimonials Carousel        |
+| AOS         | Animations on Scroll         |
+| CountUp.js  | Animated Counters            |
+| Bootstrap + Reactstrap| Styling and UI components|
+| React Toastify       | Toast notifications                             |
+| React Phone Input    | International phone input field                 |
+
+---
+
+
+## 🚀 Run Locally
+
+```bash
+# Clone the project
+git clone https://github.com/Abubaker-Abeer/TravelWorld
+cd TravelWorld
+
+# Install dependencies
+npm install
+
+# Run the development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Deploy to Firebase
+firebase deploy
