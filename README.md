@@ -47,8 +47,8 @@
 ## 🚀 Run Locally
 
 ```bash
-# Clone the project
-git clone https://github.com/Abubaker-Abeer/TravelWorld
+# Clone the repository
+git clone https://github.com/Abubaker-Abeer/TravelWorld.git
 cd TravelWorld
 
 # Install dependencies
@@ -60,5 +60,8 @@ npm run dev
 # Build for production
 npm run build
 
-# Deploy to Firebase
+# (Optional) Install Firebase CLI if not already installed
+npm install -g firebase-tools
+
+# Deploy to Firebase (after login and init)
 firebase deploy
