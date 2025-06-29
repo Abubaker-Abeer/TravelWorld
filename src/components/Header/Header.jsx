@@ -3,7 +3,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { useRef, useEffect, useState } from "react";
 import logo from "../../assets/logo1.png";
 import defaultProfilePic from "../../assets/images/user.png";
-import { onAuthStateChanged } from "firebase/auth";
+import { onAuthStateChanged, signOut } from "firebase/auth";
 import { auth } from "../../firebase/firebase";
 
 export default function Header() {
@@ -12,17 +12,20 @@ export default function Header() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [user, setUser] = useState(null);
 
-  const handleLogout = () => {
-    localStorage.removeItem("loggedIn");
-    setUser(null);
-    navigate("/home");
+  const handleLogout = async () => {
+    try {
+      await signOut(auth); 
+      setUser(null);
+      navigate("/login"); 
+      window.location.reload(); 
+    } catch (error) {
+      console.error("Error logging out:", error);
+    }
   };
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
-      if (currentUser) {
-        setUser(currentUser);
-      }
+      setUser(currentUser);
     });
 
     return () => unsubscribe();
@@ -49,20 +52,21 @@ export default function Header() {
         </div>
         <ul className="menu">
           <li>
-           <NavLink to="/home" className={({ isActive }) => (isActive ? "active_link" : "")}>Home</NavLink>
+            <NavLink to="/home" className={({ isActive }) => (isActive ? "active_link" : "")}>Home</NavLink>
           </li>
           <li>
-            <NavLink to="/about" className={({ isActive }) => isActive ? "active_link" : ""}>About</NavLink>
+            <NavLink to="/about" className={({ isActive }) => (isActive ? "active_link" : "")}>About</NavLink>
           </li>
           <li>
-            <NavLink to="/tours" className={({ isActive }) => isActive ? "active_link" : ""}>Tours</NavLink>
+            <NavLink to="/tours" className={({ isActive }) => (isActive ? "active_link" : "")}>Tours</NavLink>
           </li>
         </ul>
+
         <div className="nav_btns">
-          {localStorage.getItem("loggedIn") === "true" && user ? (
+          {user ? (
             <div className="profile_dropdown">
               <img
-                src={defaultProfilePic}
+                src={user.photoURL || defaultProfilePic}
                 alt="user"
                 className="profile_pic"
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
